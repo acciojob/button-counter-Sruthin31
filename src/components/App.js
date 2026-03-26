@@ -1,9 +1,10 @@
 
-import React, { useState } from "react";
+import React from "react";
 import './../styles/App.css';
+import { useState } from "react";
 
 const App = () => {
-  const [count,setCount] = useState(0);
+  const[count,setCount] = useState(0);
   const handleClick = () =>{
     setCount(count+1);
   }
@@ -12,7 +13,7 @@ const App = () => {
 
     <div>
         {/* Do not remove the main div */}
-        <p>Button clicked {count}times</p>
+        <div>Button clicked {count} times</div>
         <button onClick={handleClick}>Click me</button>
     </div>
   )
