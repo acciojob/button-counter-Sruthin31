@@ -19,7 +19,6 @@ const App = () => {
       <button data-testid="button" onClick={handleClick}>
         Click me
       </button>
-
     </div>
   );
 };
