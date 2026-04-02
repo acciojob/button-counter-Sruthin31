@@ -1,22 +1,27 @@
-
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
-import { useState } from "react";
 
 const App = () => {
-  const[count,setCount] = useState(0);
-  const handleClick = () =>{
-    setCount(count+1);
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
   };
+
   return (
-
-
     <div>
-        {/* Do not remove the main div */}
-        <p>Button clicked {count} times</p>
-        <button onClick={handleClick}>Click me</button>
-    </div>
-  )
-}
+      {/* Do not remove the main div */}
+      
+      <p data-testid="counter">
+        Button clicked {count} times
+      </p>
 
-export default App
+      <button data-testid="button" onClick={handleClick}>
+        Click me
+      </button>
+
+    </div>
+  );
+};
+
+export default App;
