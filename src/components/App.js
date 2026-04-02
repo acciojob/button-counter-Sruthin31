@@ -20,8 +20,10 @@ const App = () => {
         Click me
       </button>
 
-    </div>
+    </div>git add .
+git commit -m "fix: remove duplicate export and retry submission"
+git push
   );
 };
 
-export default App;// retry
+export default App;
