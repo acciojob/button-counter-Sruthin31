@@ -11,14 +11,11 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
-      
-      <p data-testid="counter">
-        Button clicked {count} times
-      </p>
 
-      <button data-testid="button" onClick={handleClick}>
-        Click me
-      </button>
+      <p data-testid="counter">
+        Button clicked {count} times</p>
+
+      <button data-testid="button" onClick={handleClick}>Click me </button>
     </div>
   );
 };
