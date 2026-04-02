@@ -5,17 +5,21 @@ const App = () => {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
-    setCount(count + 1);
+    setCount(prev => prev + 1);
   };
 
   return (
     <div>
       {/* Do not remove the main div */}
-
+      
       <p data-testid="counter">
-        Button clicked {count} times</p>
+        Button clicked {count} times
+      </p>
 
-      <button data-testid="button" onClick={handleClick}>Click me </button>
+      <button data-testid="button" onClick={handleClick}>
+        Click me
+      </button>
+
     </div>
   );
 };
